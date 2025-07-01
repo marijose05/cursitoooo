@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Etiquetas HTML</title>
+    <style>
+        /* Estilos básicos para que la tabla sea legible y esté bien presentada */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        thead {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+        tr:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 90%;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap; /* Asegura que el contenido no se desborde */
+            word-wrap: break-word;
+        }
+        pre code {
+            padding: 0;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabla de Referencia Rápida: 100 Etiquetas HTML Esenciales</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>¿Qué hace la etiqueta? (Descripción Corta)</th>
+                <th>Etiqueta</th>
+                <th>Ejemplo de Uso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Etiqueta raíz que engloba todo el contenido.</td>
+                <td><code>&lt;html&gt;</code></td>
+                <td><pre><code>&lt;html lang="es"&gt;...&lt;/html&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contiene metadatos, título y enlaces a scripts/estilos.</td>
+                <td><code>&lt;head&gt;</code></td>
+                <td><pre><code>&lt;head&gt;...&lt;/head&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contiene todo el contenido visible de la página.</td>
+                <td><code>&lt;body&gt;</code></td>
+                <td><pre><code>&lt;body&gt;...&lt;/body&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Establece el título de la página en la pestaña del navegador.</td>
+                <td><code>&lt;title&gt;</code></td>
+                <td><pre><code>&lt;title&gt;Mi Página Web&lt;/title&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el tipo de documento como HTML5.</td>
+                <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                <td><pre><code>&lt;!DOCTYPE html&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Proporciona metadatos (charset, viewport, description).</td>
+                <td><code>&lt;meta&gt;</code></td>
+                <td><pre><code>&lt;meta charset="UTF-8"&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Vincula recursos externos, como hojas de estilo CSS.</td>
+                <td><code>&lt;link&gt;</code></td>
+                <td><pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contiene código CSS interno.</td>
+                <td><code>&lt;style&gt;</code></td>
+                <td><pre><code>&lt;style&gt; p { color: blue; } &lt;/style&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Incrusta o enlaza a código JavaScript.</td>
+                <td><code>&lt;script&gt;</code></td>
+                <td><pre><code>&lt;script src="app.js"&gt;&lt;/script&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Encabezados o títulos, del más al menos importante (h1 a h6).</td>
+                <td><code>&lt;h1&gt;...&lt;h6&gt;</code></td>
+                <td><pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un párrafo de texto.</td>
+                <td><code>&lt;p&gt;</code></td>
+                <td><pre><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contenedor genérico en bloque para agrupar elementos.</td>
+                <td><code>&lt;div&gt;</code></td>
+                <td><pre><code>&lt;div class="container"&gt;...&lt;/div&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contenedor genérico en línea para dar estilo a una parte del texto.</td>
+                <td><code>&lt;span&gt;</code></td>
+                <td><pre><code>&lt;p&gt;Texto con &lt;span&gt;estilo&lt;/span&gt;.&lt;/p&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el encabezado de una página o sección.</td>
+                <td><code>&lt;header&gt;</code></td>
+                <td><pre><code>&lt;header&gt;...&lt;/header&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el pie de página de una página o sección.</td>
+                <td><code>&lt;footer&gt;</code></td>
+                <td><pre><code>&lt;footer&gt;...&lt;/footer&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un bloque de enlaces de navegación.</td>
+                <td><code>&lt;nav&gt;</code></td>
+                <td><pre><code>&lt;nav&gt;&lt;a href="/"&gt;Inicio&lt;/a&gt;&lt;/nav&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el contenido principal y único de la página.</td>
+                <td><code>&lt;main&gt;</code></td>
+                <td><pre><code>&lt;main&gt;...&lt;/main&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una sección temática en un documento.</td>
+                <td><code>&lt;section&gt;</code></td>
+                <td><pre><code>&lt;section&gt;...&lt;/section&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define contenido independiente y autocontenido (ej. un post).</td>
+                <td><code>&lt;article&gt;</code></td>
+                <td><pre><code>&lt;article&gt;...&lt;/article&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define contenido relacionado tangencialmente (ej. una barra lateral).</td>
+                <td><code>&lt;aside&gt;</code></td>
+                <td><pre><code>&lt;aside&gt;...&lt;/aside&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una lista desordenada (con viñetas).</td>
+                <td><code>&lt;ul&gt;</code></td>
+                <td><pre><code>&lt;ul&gt;...&lt;/ul&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una lista ordenada (numerada).</td>
+                <td><code>&lt;ol&gt;</code></td>
+                <td><pre><code>&lt;ol&gt;...&lt;/ol&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un elemento de una lista (hijo de `ul` u `ol`).</td>
+                <td><code>&lt;li&gt;</code></td>
+                <td><pre><code>&lt;li&gt;Elemento de lista&lt;/li&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una lista de descripción.</td>
+                <td><code>&lt;dl&gt;</code></td>
+                <td><pre><code>&lt;dl&gt;...&lt;/dl&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un término en una lista de descripción.</td>
+                <td><code>&lt;dt&gt;</code></td>
+                <td><pre><code>&lt;dt&gt;HTML&lt;/dt&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Describe un término en una lista de descripción.</td>
+                <td><code>&lt;dd&gt;</code></td>
+                <td><pre><code>&lt;dd&gt;Lenguaje de Marcado.&lt;/dd&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Crea un hipervínculo a otras páginas o recursos.</td>
+                <td><code>&lt;a&gt;</code></td>
+                <td><pre><code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Incrusta una imagen en la página.</td>
+                <td><code>&lt;img&gt;</code></td>
+                <td><pre><code>&lt;img src="foto.jpg" alt="Descripción"&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Agrupa una figura (imagen, diagrama) con su leyenda.</td>
+                <td><code>&lt;figure&gt;</code></td>
+                <td><pre><code>&lt;figure&gt;...&lt;/figure&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Proporciona una leyenda o título para un `figure`.</td>
+                <td><code>&lt;figcaption&gt;</code></td>
+                <td><pre><code>&lt;figcaption&gt;Fig. 1&lt;/figcaption&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Pone texto en negrita sin importancia semántica.</td>
+                <td><code>&lt;b&gt;</code></td>
+                <td><pre><code>Texto en &lt;b&gt;negrita&lt;/b&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Indica importancia fuerte (se muestra en negrita).</td>
+                <td><code>&lt;strong&gt;</code></td>
+                <td><pre><code>&lt;strong&gt;Advertencia:&lt;/strong&gt; Peligro.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Pone texto en cursiva para denotar un tono diferente.</td>
+                <td><code>&lt;i&gt;</code></td>
+                <td><pre><code>El término &lt;i&gt;ad hoc&lt;/i&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Indica énfasis en el texto (se muestra en cursiva).</td>
+                <td><code>&lt;em&gt;</code></td>
+                <td><pre><code>Debes hacerlo &lt;em&gt;ahora&lt;/em&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Subraya texto (uso poco común, evitar por confusión con enlaces).</td>
+                <td><code>&lt;u&gt;</code></td>
+                <td><pre><code>Texto &lt;u&gt;subrayado&lt;/u&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Inserta un salto de línea.</td>
+                <td><code>&lt;br&gt;</code></td>
+                <td><pre><code>Línea 1.&lt;br&gt;Línea 2.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Inserta una línea horizontal (ruptura temática).</td>
+                <td><code>&lt;hr&gt;</code></td>
+                <td><pre><code>&lt;p&gt;Sección 1&lt;/p&gt;&lt;hr&gt;&lt;p&gt;Sección 2&lt;/p&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un fragmento de código informático.</td>
+                <td><code>&lt;code&gt;</code></td>
+                <td><pre><code>La función es &lt;code&gt;alert()&lt;/code&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto preformateado, conservando espacios y saltos.</td>
+                <td><code>&lt;pre&gt;</code></td>
+                <td><pre><code>&lt;pre&gt;Texto con    espacios.&lt;/pre&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una sección que es una cita larga de otra fuente.</td>
+                <td><code>&lt;blockquote&gt;</code></td>
+                <td><pre><code>&lt;blockquote&gt;...&lt;/blockquote&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el título de una obra creativa.</td>
+                <td><code>&lt;cite&gt;</code></td>
+                <td><pre><code>Mi libro favorito es &lt;cite&gt;El Quijote&lt;/cite&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una cita corta en línea.</td>
+                <td><code>&lt;q&gt;</code></td>
+                <td><pre><code>Él dijo, &lt;q&gt;Hola&lt;/q&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto de subíndice (más abajo y pequeño).</td>
+                <td><code>&lt;sub&gt;</code></td>
+                <td><pre><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto de superíndice (más arriba y pequeño).</td>
+                <td><code>&lt;sup&gt;</code></td>
+                <td><pre><code>x&lt;sup&gt;2&lt;/sup&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto más pequeño (para "letra pequeña" o comentarios).</td>
+                <td><code>&lt;small&gt;</code></td>
+                <td><pre><code>&lt;small&gt;Copyright 2025&lt;/small&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto resaltado o marcado.</td>
+                <td><code>&lt;mark&gt;</code></td>
+                <td><pre><code>Texto &lt;mark&gt;resaltado&lt;/mark&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una fecha u hora de forma semántica.</td>
+                <td><code>&lt;time&gt;</code></td>
+                <td><pre><code>&lt;time datetime="2025-07-01"&gt;1 de Julio&lt;/time&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un formulario para la entrada de datos del usuario.</td>
+                <td><code>&lt;form&gt;</code></td>
+                <td><pre><code>&lt;form action="/enviar"&gt;...&lt;/form&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Crea un control de entrada (texto, contraseña, checkbox, etc.).</td>
+                <td><code>&lt;input&gt;</code></td>
+                <td><pre><code>&lt;input type="text" name="usuario"&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una etiqueta descriptiva para un `input`.</td>
+                <td><code>&lt;label&gt;</code></td>
+                <td><pre><code>&lt;label for="user"&gt;Usuario:&lt;/label&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un área de texto de múltiples líneas.</td>
+                <td><code>&lt;textarea&gt;</code></td>
+                <td><pre><code>&lt;textarea name="comentario"&gt;&lt;/textarea&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un botón clickeable.</td>
+                <td><code>&lt;button&gt;</code></td>
+                <td><pre><code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Crea un menú desplegable.</td>
+                <td><code>&lt;select&gt;</code></td>
+                <td><pre><code>&lt;select name="pais"&gt;...&lt;/select&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una opción dentro de un `select`.</td>
+                <td><code>&lt;option&gt;</code></td>
+                <td><pre><code>&lt;option value="ve"&gt;Venezuela&lt;/option&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Agrupa opciones relacionadas dentro de un `select`.</td>
+                <td><code>&lt;optgroup&gt;</code></td>
+                <td><pre><code>&lt;optgroup label="Europa"&gt;...&lt;/optgroup&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Agrupa campos relacionados en un formulario.</td>
+                <td><code>&lt;fieldset&gt;</code></td>
+                <td><pre><code>&lt;fieldset&gt;...&lt;/fieldset&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un título para un `fieldset`.</td>
+                <td><code>&lt;legend&gt;</code></td>
+                <td><pre><code>&lt;legend&gt;Datos Personales&lt;/legend&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Provee una lista de autocompletado para un `input`.</td>
+                <td><code>&lt;datalist&gt;</code></td>
+                <td><pre><code>&lt;input list="items"&gt;&lt;datalist id="items"&gt;...&lt;/datalist&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una tabla.</td>
+                <td><code>&lt;table&gt;</code></td>
+                <td><pre><code>&lt;table&gt;...&lt;/table&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Agrupa el contenido del encabezado de la tabla.</td>
+                <td><code>&lt;thead&gt;</code></td>
+                <td><pre><code>&lt;thead&gt;...&lt;/thead&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Agrupa el contenido del cuerpo de la tabla.</td>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td><pre><code>&lt;tbody&gt;...&lt;/tbody&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Agrupa el contenido del pie de la tabla.</td>
+                <td><code>&lt;tfoot&gt;</code></td>
+                <td><pre><code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una fila en una tabla.</td>
+                <td><code>&lt;tr&gt;</code></td>
+                <td><pre><code>&lt;tr&gt;...&lt;/tr&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una celda de encabezado en una tabla.</td>
+                <td><code>&lt;th&gt;</code></td>
+                <td><pre><code>&lt;th&gt;Nombre&lt;/th&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una celda de datos en una tabla.</td>
+                <td><code>&lt;td&gt;</code></td>
+                <td><pre><code>&lt;td&gt;Juan&lt;/td&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el título de una tabla.</td>
+                <td><code>&lt;caption&gt;</code></td>
+                <td><pre><code>&lt;caption&gt;Ventas Anuales&lt;/caption&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Incrusta otro documento HTML en la página (ej. un mapa).</td>
+                <td><code>&lt;iframe&gt;</code></td>
+                <td><pre><code>&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Incrusta contenido de video.</td>
+                <td><code>&lt;video&gt;</code></td>
+                <td><pre><code>&lt;video src="mi-video.mp4" controls&gt;&lt;/video&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Incrusta contenido de audio.</td>
+                <td><code>&lt;audio&gt;</code></td>
+                <td><pre><code>&lt;audio src="mi-audio.mp3" controls&gt;&lt;/audio&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define múltiples fuentes para `video` o `audio`.</td>
+                <td><code>&lt;source&gt;</code></td>
+                <td><pre><code>&lt;source src="video.webm" type="video/webm"&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Permite mostrar diferentes imágenes para diferentes dispositivos.</td>
+                <td><code>&lt;picture&gt;</code></td>
+                <td><pre><code>&lt;picture&gt;...&lt;/picture&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un contenedor para gráficos vectoriales (SVG).</td>
+                <td><code>&lt;svg&gt;</code></td>
+                <td><pre><code>&lt;svg width="100" height="100"&gt;...&lt;/svg&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Se usa para dibujar gráficos sobre la marcha con JavaScript.</td>
+                <td><code>&lt;canvas&gt;</code></td>
+                <td><pre><code>&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un contenedor para un plug-in o aplicación externa.</td>
+                <td><code>&lt;embed&gt;</code></td>
+                <td><pre><code>&lt;embed src="animacion.swf"&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define un recurso embebido (similar a `embed`).</td>
+                <td><code>&lt;object&gt;</code></td>
+                <td><pre><code>&lt;object data="archivo.pdf"&gt;&lt;/object&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Crea un widget de revelación de información (acordeón).</td>
+                <td><code>&lt;details&gt;</code></td>
+                <td><pre><code>&lt;details&gt;...&lt;/details&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el encabezado visible para un `details`.</td>
+                <td><code>&lt;summary&gt;</code></td>
+                <td><pre><code>&lt;summary&gt;Ver más&lt;/summary&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Muestra el progreso de una tarea.</td>
+                <td><code>&lt;progress&gt;</code></td>
+                <td><pre><code>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Representa una medida escalar en un rango conocido (medidor).</td>
+                <td><code>&lt;meter&gt;</code></td>
+                <td><pre><code>&lt;meter value="0.6"&gt;60%&lt;/meter&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una abreviatura o acrónimo.</td>
+                <td><code>&lt;abbr&gt;</code></td>
+                <td><pre><code>&lt;abbr title="Organización Mundial de la Salud"&gt;OMS&lt;/abbr&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define la información de contacto del autor/propietario.</td>
+                <td><code>&lt;address&gt;</code></td>
+                <td><pre><code>&lt;address&gt;...&lt;/address&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto que ha sido eliminado del documento.</td>
+                <td><code>&lt;del&gt;</code></td>
+                <td><pre><code>Precio: &lt;del&gt;$100&lt;/del&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define texto que ha sido insertado en el documento.</td>
+                <td><code>&lt;ins&gt;</code></td>
+                <td><pre><code>Precio: &lt;ins&gt;$50&lt;/ins&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una entrada de teclado.</td>
+                <td><code>&lt;kbd&gt;</code></td>
+                <td><pre><code>Presiona &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una salida de muestra de un programa.</td>
+                <td><code>&lt;samp&gt;</code></td>
+                <td><pre><code>&lt;samp&gt;Error: Archivo no encontrado.&lt;/samp&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define una variable en un contexto matemático o de programación.</td>
+                <td><code>&lt;var&gt;</code></td>
+                <td><pre><code>La variable &lt;var&gt;x&lt;/var&gt; es...</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define contenido alternativo si JavaScript está desactivado.</td>
+                <td><code>&lt;noscript&gt;</code></td>
+                <td><pre><code>&lt;noscript&gt;Necesitas JS.&lt;/noscript&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contiene HTML que puede ser clonado y usado por JS.</td>
+                <td><code>&lt;template&gt;</code></td>
+                <td><pre><code>&lt;template id="fila"&gt;...&lt;/template&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Define el resultado de un cálculo.</td>
+                <td><code>&lt;output&gt;</code></td>
+                <td><pre><code>&lt;output name="resultado"&gt;100&lt;/output&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Aísla texto que puede tener una direccionalidad diferente.</td>
+                <td><code>&lt;bdi&gt;</code></td>
+                <td><pre><code>Usuario &lt;bdi&gt;جيمي&lt;/bdi&gt;: 5 posts.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Sobrescribe la direccionalidad del texto.</td>
+                <td><code>&lt;bdo&gt;</code></td>
+                <td><pre><code>&lt;bdo dir="rtl"&gt;Texto al revés&lt;/bdo&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Contenedor para anotaciones Ruby (fonética en idiomas asiáticos).</td>
+                <td><code>&lt;ruby&gt;</code></td>
+                <td><pre><code>&lt;ruby&gt;漢&lt;rt&gt;kan&lt;/rt&gt;字&lt;rt&gt;ji&lt;/rt&gt;&lt;/ruby&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>El texto de la anotación Ruby.</td>
+                <td><code>&lt;rt&gt;</code></td>
+                <td><pre><code>&lt;rt&gt;kan&lt;/rt&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Provee paréntesis para navegadores sin soporte para `ruby`.</td>
+                <td><code>&lt;rp&gt;</code></td>
+                <td><pre><code>&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;</code></pre></td>
+            </tr>
+            <tr>
+                <td>Representa texto tachado (obsoleto, usar `del`).</td>
+                <td><code>&lt;s&gt;</code></td>
+                <td><pre><code>&lt;s&gt;Ya no es válido&lt;/s&gt;.</code></pre></td>
+            </tr>
+            <tr>
+                <td>Indica una oportunidad de salto de línea en un texto largo.</td>
+                <td><code>&lt;wbr&gt;</code></td>
+                <td><pre><code>un/texto/muy/&lt;wbr&gt;largo/sin/espacios.</code></pre></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

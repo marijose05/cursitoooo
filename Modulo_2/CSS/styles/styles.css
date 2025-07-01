@@ -1,0 +1,334 @@
+/*
+  ============================================================================
+  HOJA DE ESTILO PARA LA GUÍA COMPLETA DE HTML
+  Autor: Gemini (IA de Google)
+  Fecha: 1 de Julio de 2025
+  Descripción: Estilos diseñados para complementar el archivo "guia_completa.html".
+  Este CSS es moderno, responsivo y está comentado para facilitar su comprensión.
+  ============================================================================
+*/
+
+/* -------------------------------------------------------------------------- */
+/* 1. Variables y Estilos Globales (Root & Body)
+/* -------------------------------------------------------------------------- */
+
+/* :root permite definir variables CSS (Custom Properties) para reutilizar valores
+   fácilmente en todo el documento, como colores, fuentes, etc. */
+:root {
+    --color-primario: #0056b3;
+    --color-secundario: #007bff;
+    --color-fondo: #f4f7f9;
+    --color-texto: #333;
+    --color-borde: #dee2e6;
+    --color-blanco: #ffffff;
+    --fuente-principal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --radio-borde: 8px; /* Para bordes redondeados consistentes */
+    --sombra-caja: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* El "Box-sizing Reset" es una práctica recomendada. Hace que el padding y
+   el border se incluyan dentro del ancho y alto total del elemento,
+   facilitando la maquetación. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Estilos base para el <body> */
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    margin: 0; /* Eliminamos el margen por defecto del navegador */
+}
+
+/* -------------------------------------------------------------------------- */
+/* 2. Tipografía y Enlaces
+/* -------------------------------------------------------------------------- */
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--color-primario);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+
+/* Estilos para los párrafos y listas */
+p, ul, ol, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: var(--color-secundario);
+    text-decoration: none; /* Quitamos el subrayado por defecto */
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--color-primario);
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 3. Estructura y Contenedores
+/* -------------------------------------------------------------------------- */
+
+/* Estilo general para todas las secciones principales */
+.seccion {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    padding: 2rem;
+    margin: 0 auto 1.5rem auto; /* Centrado horizontal y margen inferior */
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-caja);
+    max-width: 900px; /* Ancho máximo para mejorar la legibilidad en pantallas grandes */
+}
+
+/* Estilos específicos para el header y el footer */
+header, footer {
+    text-align: center;
+}
+
+header {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+footer {
+    background-color: #343a40;
+    color: var(--color-blanco);
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    max-width: 100%; /* El footer ocupa todo el ancho */
+    border-radius: 0;
+}
+
+footer a {
+    color: #6cace4;
+}
+
+/* Estilo para la barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre los elementos de la navegación */
+}
+
+/* -------------------------------------------------------------------------- */
+/* 4. Estilos para Formularios
+/* -------------------------------------------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espacio entre los fieldsets */
+}
+
+fieldset {
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 1.5rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    padding: 0 0.5rem;
+}
+
+/* Estilo común para inputs, textareas y selects para consistencia */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    font-size: 1rem;
+    font-family: var(--fuente-principal);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto visual al hacer foco en un campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block; /* Asegura que el margen inferior funcione */
+}
+
+/* Estilo para botones */
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-blanco);
+    background-color: var(--color-secundario);
+    border: none;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    align-self: flex-start; /* Alinea los botones a la izquierda */
+}
+
+button[type="reset"] {
+    background-color: #6c757d; /* Color gris para el botón de limpiar */
+}
+
+button:hover {
+    background-color: var(--color-primario);
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* -------------------------------------------------------------------------- */
+/* 5. Estilos para Tablas
+/* -------------------------------------------------------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin-bottom: 1rem;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    caption-side: top; /* Posición del título */
+    padding: 0.5rem;
+    color: var(--color-primario);
+}
+
+/* Estilo para celdas de encabezado y de datos */
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--color-borde);
+}
+
+thead {
+    background-color: #e9ecef; /* Fondo gris claro para el encabezado */
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Filas con fondo alterno para mejor legibilidad (efecto cebra) */
+tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 6. Estilos para Elementos Misceláneos
+/* -------------------------------------------------------------------------- */
+
+/* Estilo para código en línea y bloques de código */
+code {
+    background-color: #e9ecef;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: var(--radio-borde);
+    overflow-x: auto; /* Permite scroll horizontal si el código es muy largo */
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid var(--color-borde);
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+    color: #6c757d;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-borde);
+    margin: 2rem 0;
+}
+
+/* Estilo para los widgets <details> y <summary> */
+details {
+    background-color: #f8f9fa;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-primario);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 7. Diseño Responsivo (Media Queries)
+/* -------------------------------------------------------------------------- */
+
+/* Estilos que se aplicarán en pantallas de 768px de ancho o menos (móviles y tablets pequeñas) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
+    }
+
+    .seccion {
+        padding: 1.5rem; /* Menos padding interno en las secciones */
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+
+    /* La navegación se vuelve vertical en móviles */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+.Media_foto {
+        width: 200px; /* Imagen ocupa todo el ancho en móviles */
+      
+
+    }
+
+}
