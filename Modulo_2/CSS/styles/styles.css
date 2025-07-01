@@ -101,7 +101,7 @@ header, footer {
 
 header {
     background-color: transparent;
-    box-shadow: none;
+    box-shadow: none;   /*(sombra)
     border: none;
 }
 
