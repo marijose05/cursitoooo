@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="pantalla">
+            <div class="operacion" id="operacion"></div>
+            <div class="resultado" id="resultado">0</div>
+        </div>
+        <div class="botones">
+            <!--funciones-->
+            <button class="btn" onclick="agregarOperacion('Math.cos(')">cos</button>
+            <button class="btn" onclick="agregarOperacion('Math.sin(')">sin</button>
+            <button class="btn" onclick="agregarOperacion('Math.tan(')">tan</button>
+            <button class="btn" onclick="agregarOperacion('^')">^</button>
+            <button class="btn operador" onclick="agregarOperacion('/')">÷</button>
+
+            
+            <!-- Más funciones -->
+            <button class="btn" onclick="agregarOperacion('Math.sqrt(')">√</button>
+            <button class="btn" onclick="agregarOperacion('(')">(</button>
+            <button class="btn" onclick="agregarOperacion(')')">)</button>
+            <button class="btn operador" onclick="agregarOperacion('*')">×</button>
+            
+            <!--  Números -->
+            <button class="btn" onclick="agregarOperacion('7')">7</button>
+            <button class="btn" onclick="agregarOperacion('8')">8</button>
+            <button class="btn" onclick="agregarOperacion('9')">9</button>
+            <button class="btn operador" onclick="agregarOperacion('-')">-</button>
+            
+            <!-- Números -->
+            <button class="btn" onclick="agregarOperacion('4')">4</button>
+            <button class="btn" onclick="agregarOperacion('5')">5</button>
+            <button class="btn" onclick="agregarOperacion('6')">6</button>
+            <button class="btn operador" onclick="agregarOperacion('+')">+</button>
+            
+            <!-- Números-->
+            <button class="btn" onclick="agregarOperacion('1')">1</button>
+            <button class="btn" onclick="agregarOperacion('2')">2</button>
+            <button class="btn" onclick="agregarOperacion('3')">3</button>
+            <button class="btn operador" onclick="calcular()">=</button>
+            
+            <!-- Números y controles -->
+            <button class="btn funcion" onclick="limpiarTodo()">AC</button>
+            <button class="btn" onclick="agregarOperacion('0')">0</button>
+            <button class="btn" onclick="agregarOperacion('.')">.</button>
+            <button class="btn funcion" onclick="borrarUltimo()">DEL</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
