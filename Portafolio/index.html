@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Pastel Moderno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Portafolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hola, soy <span style="color: var(--pastel-mint);">Maria Jose</span></h1>
+            <p> tecnico medio en tecnologia grafica, Estudiante de ING.sistemas.</p>
+            <a href="#projects" class="cta-button">Ver proyectos</a>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <div class="project-img" style="background-color: var(--pastel-mint);">
+                    <i class="fas fa-paint-brush" style="font-size: 4rem;"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Diseño de Interfaz</h3>
+                    <p></p>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <div class="project-img" style="background-color: var(--pastel-lavender);">
+                    <i class="fas fa-mobile-alt" style="font-size: 4rem;"></i>
+                </div>
+                <div class="project-info">
+                    <h3>App Móvil</h3>
+                    <p>Aplicación .</p>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <div class="project-img" style="background-color: var(--pastel-peach);">
+                    <i class="fas fa-store" style="font-size: 4rem;"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Estudiante</h3>
+                    <p>aprendiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <div class="profile-circle">
+                
+    <img src="Portafolio/prueba/potito.png" alt="foto">
+            </div>
+        </div>
+        <div class="about-text">
+            <h2>Sobre mí</h2>
+            <p> estudiante con sueño a las 2:00pm .</p>
+            <p>ya termine creooo.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>Contáctame</h2>
+        <p>¿Listo para comenzar tu proyecto? Envíame un mensaje.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2025 Portafolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
